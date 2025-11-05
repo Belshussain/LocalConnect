@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/accent_teal"
+    tools:context=".DashboardCustomerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Language Selection Card - Blue Theme -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/langCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical"
+                android:baselineAligned="false">
+
+                <Spinner
+                    android:id="@+id/langSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/langApply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="@string/apply_language"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/primary_blue"
+                    app:cornerRadius="8dp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Main Dashboard Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:background="@color/white">
+
+                <!-- Welcome Section -->
+                <TextView
+                    android:id="@+id/welcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/welcome_user"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Balance Card with Gradient -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="24dp"
+                        android:background="@drawable/login_bg_gradient">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@android:drawable/ic_dialog_info"
+                            android:layout_marginBottom="8dp"
+                            app:tint="@color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Available Balance"
+                            android:textSize="14sp"
+                            android:textColor="#E0FFFFFF"
+                            android:layout_marginBottom="8dp"/>
+
+                        <TextView
+                            android:id="@+id/balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/balance"
+                            android:textSize="36sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Quick Actions Title -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quick Actions"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Action Buttons Grid - Square Tiles (2x2) -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="24dp">
+
+                    <!-- Row 1 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <!-- Pay by Phone Tile -->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="140dp"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="6dp"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="4dp"
+                            app:cardBackgroundColor="@color/primary_blue">
+
+                            <LinearLayout
+                                android:id="@+id/payByPhone"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="16dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:background="?android:attr/selectableItemBackground">
+
+                                <ImageView
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:src="@android:drawable/ic_menu_call"
+                                    android:layout_marginBottom="12dp"
+                                    app:tint="@color/white"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/pay_by_phone"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:gravity="center"
+                                    android:maxLines="2"/>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <!-- Scan QR Tile -->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="140dp"
+                            android:layout_weight="1"
+                            android:layout_marginStart="6dp"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="4dp"
+                            app:cardBackgroundColor="@color/primary_green">
+
+                            <LinearLayout
+                                android:id="@+id/scanQr"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="16dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:background="?android:attr/selectableItemBackground">
+
+                                <ImageView
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:src="@android:drawable/ic_menu_camera"
+                                    android:layout_marginBottom="12dp"
+                                    app:tint="@color/white"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/scan_qr"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:gravity="center"
+                                    android:maxLines="2"/>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <!-- Row 2 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- View Transactions Tile -->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="140dp"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="6dp"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="4dp"
+                            app:cardBackgroundColor="@color/accent_teal">
+
+                            <LinearLayout
+                                android:id="@+id/viewTransactions"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="16dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:background="?android:attr/selectableItemBackground">
+
+                                <ImageView
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:src="@android:drawable/ic_menu_recent_history"
+                                    android:layout_marginBottom="12dp"
+                                    app:tint="@color/white"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/view_transactions"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:gravity="center"
+                                    android:maxLines="2"/>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <!-- Update Profile Tile -->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="140dp"
+                            android:layout_weight="1"
+                            android:layout_marginStart="6dp"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="4dp"
+                            app:cardBackgroundColor="@color/primary_green_light">
+
+                            <LinearLayout
+                                android:id="@+id/updateProfile"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="16dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:background="?android:attr/selectableItemBackground">
+
+                                <ImageView
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:src="@android:drawable/ic_menu_edit"
+                                    android:layout_marginBottom="12dp"
+                                    app:tint="@color/white"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Update Profile"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:gravity="center"
+                                    android:maxLines="2"/>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Hidden fields for compatibility -->
+                <TextView
+                    android:id="@+id/editName"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/editEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/editPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:text="@string/logout"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="@color/primary_blue"
+                    android:elevation="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

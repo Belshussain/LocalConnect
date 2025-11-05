@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LocalConnecT</string>
+    <string name="pay">Pay</string>
+
+    <string name="email_label">Email</string>
+    <string name="password_label">Password</string>
+    <string name="name_label">Name</string>
+    <string name="phone_label">Phone</string>
+    <string name="role_label">Role</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="search">Search</string>
+    <string name="reset_balance">Reset balance to 25000</string>
+    <string name="logout">Logout</string>
+
+    <string name="go_register">No account? Register</string>
+    <string name="fill_all_fields">Please fill all fields</string>
+    <string name="login_failed">Login failed</string>
+    <string name="register_failed">Registration failed</string>
+    <string name="register_success">Registration successful</string>
+    <string name="welcome_user">Welcome, %1$s</string>
+    <string name="balance">Balance</string>
+    <string name="balance_fmt">Balance: %1$.2f</string>
+    <string name="seller_dashboard_title">Seller: %1$s</string>
+    <string name="qr_generate_failed">Failed to generate QR</string>
+    <string name="enter_phone">Enter a phone number</string>
+    <string name="user_not_found">User not found</string>
+    <string name="search_first">Search a user first</string>
+    <string name="balance_reset">Balance reset to 25000</string>
+    <string name="action_failed">Action failed</string>
+    <string name="payment_success">Payment successful</string>
+    <string name="insufficient_funds">Insufficient funds</string>
+
+    <string name="pay_by_phone">Pay by phone</string>
+    <string name="scan_qr">Scan QR</string>
+    <string name="amount_label">Amount</string>
+    <string name="phone_payment_hint">Receiver phone e.g. 0812345678</string>
+    <string name="apply_language">Apply</string>
+    <string name="choose_language">Language</string>
+
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="enter_email_for_reset">Please enter your email to reset password</string>
+    <string name="reset_email_sent">Password reset email sent. Check your inbox.</string>
+    <string name="reset_failed">Failed to send reset email. Try again.</string>
+
+    <!-- UI strings -->
+    <string name="quick_actions">Quick Actions</string>
+    <string name="available_balance">Available Balance</string>
+    <string name="profile_information">Profile Information</string>
+    <string name="full_name">Full Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="must_be_10_digits">Must be 10 digits</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="view_transactions">View Transactions</string>
+    <string name="create_account">Create Account</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="join_localconnect">Join LocalConnect Today</string>
+    <string name="send_money">Send Money</string>
+    <string name="enter_recipient_details">Enter recipient details</string>
+    <string name="recipient_phone">Recipient Phone Number</string>
+    <string name="amount_to_send">Amount to Send</string>
+    <string name="enter_amount_rands">Enter amount in Rands</string>
+    <string name="verify_phone_warning">⚠ Verify phone number before sending</string>
+    <string name="cancel">Cancel</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="view_payment_history">View all your payment history</string>
+    <string name="recent_activity">Recent Activity</string>
+    <string name="no_transactions_yet">No Transactions Yet</string>
+    <string name="transactions_will_appear">Your transaction history will appear here</string>
+    <string name="payment_qr_code">Payment QR Code</string>
+    <string name="show_qr_to_customers">Show this QR code to customers for payment</string>
+    <string name="admin_profile">Admin Profile</string>
+    <string name="user_management">User Management</string>
+    <string name="search_users">Search Users</string>
+    <string name="enter_name_or_phone">Enter name or phone</string>
+    <string name="view_all">View All</string>
+    <string name="results">Results:</string>
+    <string name="welcome_admin">Welcome Admin</string>
+    <string name="seamless_payments">Seamless Local Payments</string>
+    <string name="localconnect">LocalConnect</string>
+    <string name="dont_have_account">Don\'t have an account? </string>
+    <string name="already_have_account">Already have an account? </string>
+    <string name="ten_digit_phone">10-digit phone number</string>
+    <string name="account_type">Account Type</string>
+    <string name="language">Language</string>
+    <string name="payment">Payment</string>
+    <string name="currency_symbol">R</string>
+    <string name="name_hint">Name</string>
+    <string name="email_hint">Email</string>
+
+    <!-- Dummy arrays for preview -->
+    <string-array name="lang_dummy">
+        <item>English (en)</item>
+        <item>Zulu (zu)</item>
+        <item>Xhosa (xh)</item>
+    </string-array>
+    <string-array name="roles_dummy">
+        <item>customer</item>
+        <item>seller</item>
+        <item>admin</item>
+    </string-array>
+</resources>

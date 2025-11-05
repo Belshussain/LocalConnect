@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LocalConnecT</string>
+
+    <string name="email_label">I-imeyile</string>
+    <string name="password_label">Inombolo yokugqitha</string>
+    <string name="name_label">Igama</string>
+    <string name="phone_label">Ifowuni</string>
+    <string name="role_label">Indima</string>
+    <string name="login">Ngena</string>
+    <string name="register">Bhalisa</string>
+    <string name="search">Khangela</string>
+    <string name="reset_balance">Setha ibhalansi kwi-25000</string>
+    <string name="logout">Phuma</string>
+
+    <string name="go_register">Awunayo i-akhawunti? Bhalisa</string>
+    <string name="fill_all_fields">Gcwalisa onke amasimi</string>
+    <string name="login_failed">Ukungena kusilele</string>
+    <string name="register_failed">Ubhaliso aluphumelelanga</string>
+    <string name="register_success">Ubhaliso luphumelele</string>
+
+    <string name="welcome_user">Wamkelekile, %1$s</string>
+    <string name="pay">Hlawula</string>
+
+    <string name="balance">Ibhalansi</string>
+    <string name="balance_fmt">Ibhalansi: %1$.2f</string>
+    <string name="seller_dashboard_title">Umthengisi: %1$s</string>
+    <string name="qr_generate_failed">Ukudala i-QR kusilele</string>
+
+    <string name="enter_phone">Faka inombolo yefowuni</string>
+    <string name="user_not_found">Umsebenzisi akafumaneki</string>
+    <string name="search_first">Khangela umsebenzisi kuqala</string>
+    <string name="balance_reset">Ibhalansi isetwe kwi-25000</string>
+    <string name="action_failed">Isenzo sisilele</string>
+
+    <string name="payment_success">Intlawulo iphumelele</string>
+    <string name="insufficient_funds">Imali ayanelanga</string>
+
+    <string name="forgot_password">Ulibale iphasiwedi?</string>
+    <string name="enter_email_for_reset">Nceda ngenisa i-imeyile yakho ukuze usete iphasiwedi kwakhona</string>
+    <string name="reset_email_sent">I-imeyile yokuseta iphasiwedi kwakhona ithunyelwe. Jonga ibhokisi lakho lemeyile.</string>
+    <string name="reset_failed">Kusilele ukuthumela i-imeyile yokuseta kwakhona. Zama kwakhona.</string>
+
+    <string name="pay_by_phone">Hlawula ngefowuni</string>
+    <string name="scan_qr">Skena i-QR</string>
+    <string name="amount_label">Isixa</string>
+    <string name="phone_payment_hint">Ifowuni yomamkeli, umzekelo 0812345678</string>
+
+    <string name="apply_language">Faka</string>
+    <string name="choose_language">Ulwimi</string>
+
+    <!-- New strings for improved UI -->
+    <string name="quick_actions">Izenzo eziKhawulezayo</string>
+    <string name="available_balance">Ibhalansi eFumanekayo</string>
+    <string name="profile_information">Ulwazi lweProfayile</string>
+    <string name="full_name">Igama eliPheleleyo</string>
+    <string name="email_address">Idilesi ye-Imeyile</string>
+    <string name="phone_number">Inombolo yeFowuni</string>
+    <string name="must_be_10_digits">Kufuneka ibe ngamanani ali-10</string>
+    <string name="update_profile">Hlaziya iProfayile</string>
+    <string name="view_transactions">Jonga iiNtengiselwano</string>
+    <string name="create_account">Dala i-Akhawunti</string>
+    <string name="confirm_password">Qinisekisa iPhasiwedi</string>
+    <string name="join_localconnect">Joyina i-LocalConnect Namhlanje</string>
+    <string name="send_money">Thumela iMali</string>
+    <string name="enter_recipient_details">Faka iinkcukacha zomamkeli</string>
+    <string name="recipient_phone">Inombolo yeFowuni yoMamkeli</string>
+    <string name="amount_to_send">Isixa esizoThunyelwa</string>
+    <string name="enter_amount_rands">Faka isixa ngeeRandi</string>
+    <string name="verify_phone_warning">⚠ Qinisekisa inombolo yefowuni phambi kokuthumela</string>
+    <string name="cancel">Rhoxisa</string>
+    <string name="transaction_history">Imbali yeeNtengiselwano</string>
+    <string name="view_payment_history">Jonga yonke imbali yakho yeentlawulo</string>
+    <string name="recent_activity">Umsebenzi waMvanje</string>
+    <string name="no_transactions_yet">Akukho Ntengiselwano Okwangoku</string>
+    <string name="transactions_will_appear">Imbali yakho yeentengiselwano iyakuvela apha</string>
+    <string name="payment_qr_code">Ikhowudi ye-QR yoHlawulo</string>
+    <string name="show_qr_to_customers">Bonisa le khowudi ye-QR kubathengi ukuze bahlawule</string>
+    <string name="admin_profile">iProfayile yoMlawuli</string>
+    <string name="user_management">Ulawulo lwaBasebenzisi</string>
+    <string name="search_users">Khangela aBasebenzisi</string>
+    <string name="enter_name_or_phone">Faka igama okanye ifowuni</string>
+    <string name="view_all">Jonga Konke</string>
+    <string name="results">Iziphumo:</string>
+    <string name="welcome_admin">Wamkelekile Mlawuli</string>
+    <string name="seamless_payments">IiNtlawulo eziGudileyo zeNdawo</string>
+    <string name="localconnect">LocalConnect</string>
+    <string name="dont_have_account">Awunayo i-akhawunti? </string>
+    <string name="already_have_account">Unayo i-akhawunti? </string>
+    <string name="ten_digit_phone">Inombolo yefowuni enamanani ali-10</string>
+    <string name="account_type">Uhlobo lwe-Akhawunti</string>
+
+    <string name="language">Ulwimi</string>
+    <string name="payment">Intlawulo</string>
+    <string name="currency_symbol">R</string>
+    <string name="name_hint">Igama</string>
+    <string name="email_hint">I-imeyile</string>
+</resources>

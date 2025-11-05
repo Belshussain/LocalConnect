@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors - Blue for Security -->
+    <color name="primary_blue">#1976D2</color>
+    <color name="primary_blue_dark">#1565C0</color>
+    <color name="primary_blue_light">#64B5F6</color>
+
+    <!-- Secondary Colors - Green for Prosperity -->
+    <color name="primary_green">#4CAF50</color>
+    <color name="primary_green_dark">#388E3C</color>
+    <color name="primary_green_light">#81C784</color>
+
+    <!-- Accent Colors -->
+    <color name="accent_teal">#00BCD4</color>
+    <color name="accent_teal_light">#80DEEA</color>
+
+    <!-- Base Colors -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="background_light">#F5F5F5</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#9E9E9E</color>
+
+    <!-- Status Colors -->
+    <color name="success">#4CAF50</color>
+    <color name="error">#F44336</color>
+    <color name="warning">#FF9800</color>
+
+    <!-- Gradient Colors -->
+    <color name="gradient_blue_start">#1976D2</color>
+    <color name="gradient_blue_end">#00BCD4</color>
+    <color name="gradient_green_start">#4CAF50</color>
+    <color name="gradient_green_end">#81C784</color>
+
+    <!-- Legacy (for compatibility) -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+</resources>

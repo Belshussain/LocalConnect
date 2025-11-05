@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/login_bg_gradient"
+    tools:context=".PaymentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Payment Icon -->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@android:drawable/ic_menu_send"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="Payment"
+            app:tint="@android:color/white"/>
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send_money"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_recipient_details"
+            android:textSize="16sp"
+            android:textColor="#E0FFFFFF"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Payment Form Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="28dp"
+                android:background="@android:color/white">
+
+                <!-- Phone Number Input -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recipient Phone Number"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/phoneInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:hint="@string/phone_payment_hint"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:drawableStart="@android:drawable/ic_menu_call"
+                    android:drawablePadding="12dp"
+                    android:padding="16dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:textSize="18sp"
+                    android:textColor="#212121"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10-digit phone number"
+                    android:textSize="12sp"
+                    android:textColor="#999999"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="4dp"/>
+
+                <!-- Amount Input -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount to Send"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rounded_edittext"
+                    android:padding="4dp"
+                    android:layout_marginBottom="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="R"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#666666"
+                        android:padding="12dp"
+                        android:layout_gravity="center_vertical"/>
+
+                    <EditText
+                        android:id="@+id/amountInput"
+                        android:layout_width="0dp"
+                        android:layout_height="56dp"
+                        android:layout_weight="1"
+                        android:hint="@string/amount_label"
+                        android:inputType="numberDecimal"
+                        android:padding="12dp"
+                        android:background="@android:color/transparent"
+                        android:textSize="18sp"
+                        android:textColor="#212121"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter amount in Rands"
+                    android:textSize="12sp"
+                    android:textColor="#999999"
+                    android:layout_marginBottom="28dp"
+                    android:layout_marginStart="4dp"/>
+
+                <!-- Pay Button -->
+
+                <!-- Info Text -->
+                <Button
+                    android:id="@+id/payBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_marginBottom="16dp"
+                    android:backgroundTint="@color/primary_blue"
+                    android:drawableStart="@android:drawable/ic_menu_send"
+                    android:drawablePadding="12dp"
+                    android:elevation="4dp"
+                    android:text="@string/pay"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⚠ Verify phone number before sending"
+                    android:textSize="13sp"
+                    android:textColor="#FF9800"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:drawablePadding="8dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Cancel"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="16dp"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+</ScrollView>
